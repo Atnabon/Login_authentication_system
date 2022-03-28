@@ -1,1 +1,1 @@
-# pre_project
+More pointers, arrays and strings
