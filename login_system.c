@@ -27,7 +27,7 @@ char generateusername(char email[50],char username[50]){
 void takepassword(char pwd[50]){
 	int i;
 	char ch;
-	ch=getch(stdin);
+	ch=getchar();
 	printf("ch=%c",ch);
 	while(1){
 	     
@@ -53,6 +53,7 @@ int main(){
 	FILE *fp;
 	struct user user;
 	char password2[50];
+	char pword[50];
 
 	printf("\n\t\t\t-----------Welcome to authentication system-----------");
 	printf("\nplease choose your operation");
@@ -90,10 +91,10 @@ int main(){
 			 fclose(fp);
 		     }
              break;
-	}
+	
 
 	     case 2:
-	          char username[50],pword[50];
+	          char username[50];
 		  struct user usr;
 
 		  printf("\n Enter your username:\t");
